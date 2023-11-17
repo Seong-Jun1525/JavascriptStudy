@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>참가신청 명단 프로그램</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>참가 신청</h2>
+        </div>
+        <div class="input-area">
+            <form action="" class="form">
+                <input type="text" id="userName" class="input" autofocus="true" placeholder="이름" />
+                <button type="button" id="add" class="btn" onclick="newRegister(); return false;">신청</button>
+                <!-- return false를 넣은 이유는 원래 버튼의 기능을 사용하지 않겠다는 의미 -->
+                <!-- return false를 넣으면 버튼을 클릭했을 때 빈 페이지로 넘어감 -->
+            </form>
+        </div>
+        <div class="content-container">
+            <div id="registerList"></div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.container {
+    width: 700px;
+    height: 100vh;
+    margin: 0 auto;
+}
+body {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    font-size: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+
+.infoForm {
+    margin-top: 50px;
+    letter-spacing: 3px;
+}
+
+.inputBox {
+    width: 75%;
+    font-size: 20px;
+}

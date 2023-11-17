@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기념일 계산기</title>
+    <style>
+        .card {
+            width: 400px;
+            height: 700px;
+            background:rgb(191, 239, 191);
+        }
+        .title {
+            width: 100%;
+            height: 30%;
+            background: yellowgreen;
+            box-sizing: border-box;
+        }
+        .titleHead {
+            font-weight: 600;
+            padding: 30px;
+            text-align: center;
+        }
+        .date {
+            font-weight: 900;
+            font-size: 3rem;
+            text-align: center;
+        }
+        .content {
+            width: 100%;
+            height: 70%;
+            background: yellow;
+            box-sizing: border-box;
+        }
+        .contentHead {
+            background: black;
+            color: white;
+            padding: 3px;
+            font-weight: 500;
+        }
+        .dateList {
+            padding: 15px 0;
+        }
+        ul {
+            display: flex;
+            list-style:none;
+            padding: 25px;
+            margin: 0 25px;
+            border-bottom: 1px solid #c4bebe;
+        }
+        li {
+            flex: 1;
+        }
+        li:nth-child(1) {
+            font-weight: 900;
+            font-size: 25px;
+        }
+        li:nth-child(2) {
+            font-weight: 400;
+            font-size: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="title">
+            <div class="titleHead">
+                우리 만난 지
+            </div>
+            <div id="accent" class="date">
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentHead">
+                기념일 계산
+            </div>
+            <div class="dateList">
+                <ul>
+                    <li>100일</li>
+                    <li id="date100"></li>
+                </ul>
+                <ul>
+                    <li>200일</li>
+                    <li id="date200"></li>
+                </ul>
+                <ul>
+                    <li>300일</li>
+                    <li id="date300"></li>
+                </ul>
+                <ul>
+                    <li>400일</li>
+                    <li id="date400"></li>
+                </ul>
+                <ul>
+                    <li>500일</li>
+                    <li id="date500"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

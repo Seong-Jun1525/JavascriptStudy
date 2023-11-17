@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배송정보 자동입력 프로그램</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="infoForm">
+            <div>
+                <form action="/" name="order">
+                    <fieldset>
+                        <legend><h2>주문 정보</h2></legend>
+                        <ul>
+                            <li>
+                                <label class="filed" for="orderName">이름 : </label>
+                                <input type="text" class="inputBox" id="orderName" name="orderName" />
+                            </li>
+                            <li>    
+                                <label class="filed" for="orderPhoneNum">번호 : </label>
+                                <input type="text" class="inputBox" id="orderPhoneNum" name="orderPhoneNum" />
+                            </li>
+                            <li>
+                                <label class="filed" for="orderAddress">주소 : </label>
+                                <input type="text" class="inputBox" id="orderAddress" name="orderAddress" />
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="infoForm">
+            <div>
+                <form action="/" name="delivery">
+                    <fieldset>
+                        <legend><h2>배송 정보</h2></legend>
+                        <div>
+                            <input type="checkbox" id="orderInfo" name="orderInfo" /> <label for="orderInfo">주문자 정보와 같습니다.</label>
+                        </div>
+                        <ul>
+                            <li>
+                                <label class="filed" for="deliveryName">이름 : </label>
+                                <input type="text" class="inputBox" id="deliveryName" name="deliveryName" />
+                            </li>
+                            <li>    
+                                <label class="filed" for="deliveryPhoneNum">번호 : </label>
+                                <input type="text" class="inputBox" id="deliveryPhoneNum" name="deliveryPhoneNum" />
+                            </li>
+                            <li>
+                                <label class="filed" for="deliveryAddress">주소 : </label>
+                                <input type="text" class="inputBox" id="deliveryAddress" name="deliveryAddress" />
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
