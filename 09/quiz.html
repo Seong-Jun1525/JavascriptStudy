@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마무리문제</title>
+    <link rel="stylesheet" href="./assets/css/quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz">
+            <h1>피자 주문</h1>
+            <form name="pizzaForm" class="pizzaForm">
+                <fieldset name="size">
+                    <legend>사이즈</legend>
+                    <span>Large</span> - <span>24000</span>원
+                </fieldset>
+                <fieldset name="addOrder">
+                    <legend>추가 주문</legend>
+                    <label for="o1">
+                        <input type="checkbox" name="order1" id="o1" class="orderPrice" value="800">
+                        피클(<span>800</span>원)
+                    </label>
+                    <label for="o2">
+                        <input type="checkbox" name="order2" id="o2" class="orderPrice" value="300">
+                        칠리소스(<span>300</span>원)
+                    </label>
+                    <label for="o3">
+                        <input type="checkbox" name="order3" id="o3" class="orderPrice" value="200">
+                        디핑소스(<span>200</span>원)
+                    </label>
+                    <label for="o4">
+                        <input type="checkbox" name="order4" id="o4" class="orderPrice" value="4800">
+                        치즈스틱(4개, <span>4800</span>원)
+                    </label>
+                    <label for="o5">
+                        <input type="checkbox" name="order5" id="o5" class="orderPrice" value="2400">
+                        콘샐러드(<span>2400</span>원)
+                    </label>
+                </fieldset>
+                <fieldset name="total">
+                    <legend>합계</legend>
+                    <input type="text" id="total" name="total" class="price" readonly>
+                </fieldset>
+            </form>
+        </div>
+        <div class="quiz">
+            <h1 class="title">원 둘레와 넓이 계산</h1>
+            반지름 :
+            <form class="radiusForm">
+                <input type="text" id="radius" class="radius" name="radius">
+                <button class="btn">계산</button>
+            </form>
+            <hr>
+            원의 둘레 : 
+            <input type="text" id="round" name="round" class="radius" readonly>
+            <br>
+            원의 넓이 : 
+            <input type="text" id="area" name="area" class="radius" readonly>
+        </div>
+    </div>
+    <script src="./assets/js/quiz.js"></script>
+</body>
+</html>

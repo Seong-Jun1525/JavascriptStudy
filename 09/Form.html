@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력값 검증 프로그램</title>
+    <link rel="stylesheet" href="./assets/css/form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>회원가입</h1>
+        <form action="" class="form">
+            <ul class="formList">
+                <li class="formItem">
+                    <div class="itemHeader">아이디</div>
+                    <div><input type="text" id="id" class="inputItem" name="r_id"></div>
+                </li>
+                <li class="formItem">
+                    <div class="itemHeader">이메일</div>
+                    <div><input type="email" id="email" class="inputItem" name="r_email"></div>
+                </li>
+                <li class="formItem">
+                    <div class="itemHeader">비밀번호</div>
+                    <div><input type="password" id="pw" class="inputItem" name="r_pw"></div>
+                </li>
+                <li class="formItem">
+                    <div class="itemHeader">비밀번호 확인</div>
+                    <div><input type="password" id="checkPw" class="inputItem" name="r_checkPw"></div>
+                </li>
+                <li class="formItem">
+                    <div class="itemHeader">이메일 수신</div>
+                    <div>
+                        <label><input type="radio" name="emailCheck" value="yes"> 예 </label>
+                        <label><input type="radio" name="emailCheck" value="no"> 아니오 </label>
+                    </div>
+                </li>
+            </ul>
+            <div class="btnDiv">
+                <button class="btn">가입하기</button>
+                <button type="reset" class="btn">취소</button>
+            </div>
+        </form>
+
+        <form name="testForm" class="form">
+            <fieldset>
+                <legend>신청인</legend>
+                <div class="listItem"><h4>이름</h4><input type="text" id="userName" class="inputItem"></div>
+                <div class="listItem">
+                    <label for="major"><h4>학과</h4></label>
+                    <select name="major" id="major" onchange="displaySelect()">
+                        <option class="selectItem">-----학과 선택-----</option>
+                        <option class="selectItem" value="v1">컴퓨터소프트웨어공학과</option>
+                        <option class="selectItem" value="v2">기계공학과</option>
+                        <option class="selectItem" value="v3">전기공학과</option>
+                        <option class="selectItem" value="v4">산업공학과</option>
+                        <option class="selectItem" value="v5">정보통신학과</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>신청과목</legend>
+                <p>이 달의 신청할 과목을 입력하세요</p>
+                <div class="listItem">
+                    <label><input type="radio" name="subject" id="c"> C언어</label>
+                    <label><input type="radio" name="subject" id="java"> 자바</label>
+                    <label><input type="radio" name="subject" id="python"> 파이썬</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>메일링</legend>
+                <p>메일로 받고 싶은 뉴스 주제를 선택하세요</p>
+                <div class="listItem">
+                    <label><input type="checkbox" name="news1" id="it"> IT</label>
+                    <label><input type="checkbox" name="news2" id="edu"> 교육</label>
+                    <label><input type="checkbox" name="news3" id="car"> 자동차</label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <script src="./assets/js/register.js"></script>
+    <script src="./assets/js/testForm.js"></script>
+</body>
+</html>
